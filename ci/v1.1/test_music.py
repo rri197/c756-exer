@@ -76,7 +76,7 @@ def test_full_cycle(mserv):
     # ... Fill in the test ...
     trc, m_id = mserv.create(song[0], song[1], orig_artist)
     assert trc == 200
-    trc = mserv.write_orig_Artist(m_id, orig_orig_artist)
+    trc = mserv.write_orig_artist(m_id, orig_orig_artist)
     assert trc == 200
     # The last statement of the test
     mserv.delete(m_id)
