@@ -78,6 +78,5 @@ def test_full_cycle(mserv):
     assert trc == 200
     trc = mserv.write_orig_Artist(m_id, orig_orig_artist)
     assert trc == 200
-    
     # The last statement of the test
     mserv.delete(m_id)
